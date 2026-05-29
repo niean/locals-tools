@@ -1,16 +1,16 @@
 :root {
   /* 颜色 */
-  --color-bg: #ffffff;
-  --color-surface: #f5f5f5;
-  --color-surface-hover: #e5e5e5;
-  --color-border: #d0d0d0;
-  --color-text: #333333;
-  --color-text-secondary: #666666;
-  --color-primary: #4a9eff;
-  --color-primary-hover: #3a8eef;
+  --color-bg: #f8fbff;
+  --color-surface: #f3f8ff;
+  --color-surface-hover: #e5f0ff;
+  --color-border: #cfe0f5;
+  --color-text: #1b3147;
+  --color-text-secondary: #5d7288;
+  --color-primary: #198cff;
+  --color-primary-hover: #0f7be6;
   --color-danger: #ff4444;
-  --color-tooltip-bg: #333;
-  --color-canvas-bg: #f0f0f0;
+  --color-tooltip-bg: #1b3147;
+  --color-canvas-bg: #edf4fb;
 
   /* 间距 */
   --space-xs: 4px;
