@@ -1,9 +1,36 @@
-### common
+# Common
 .DS_Store
-*.tar.gz
-.gitversion
-/.idea
+.DS_Store?
+*.log
+*.tmp
+*.temp
 ~$*.xlsx
 ~$*.xls
-.cursor
+*~
+*.tar.gz
+.gitversion
 
+# Secrets
+config_prod.json
+secrets.json
+*.key
+*.pem
+.env
+
+# IDE
+.vscode/
+.idea/
+.cursor/
+.clinerules/
+.superpowers/
+.claude/
+.harness/
+
+# Project
+__pycache__/
+locals/*
+!locals/.gitkeep
+logs/*
+!logs/.gitkeep
+data/*
+!data/.gitkeep
