@@ -1,9 +1,9 @@
 #!/bin/bash
-# start-locals-http.sh - 启动 locals http 服务
+# start-tools-http.sh - 启动 tools http 服务
 
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 PROJECT_DIR="${SCRIPT_DIR}/"
-LOG_DIR="$HOME/Library/Logs/locals-http"
+LOG_DIR="$HOME/Library/Logs/tools-http"
 LOG_FILE="$LOG_DIR/server.log"
 PORT=8888
 
