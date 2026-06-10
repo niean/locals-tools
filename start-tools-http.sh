@@ -4,7 +4,7 @@
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 LOG_DIR="$HOME/Library/Logs/tools-http"
 LOG_FILE="$LOG_DIR/server.log"
-PORT=8190
+PORT="${TOOLS_HTTP_PORT:-8190}"
 
 # 创建日志目录
 mkdir -p "$LOG_DIR"
