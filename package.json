@@ -1,0 +1,11 @@
+{
+  "type": "module",
+  "scripts": {
+    "check": "node --check video-editor/js/*.js video-editor/js/tools/*.js video-editor/js/exporter/*.js video-editor/js/utils/*.js",
+    "test": "node --test video-editor/tests/*.test.mjs"
+  },
+  "devDependencies": {
+    "@ffmpeg/core": "^0.12.10",
+    "@ffmpeg/ffmpeg": "^0.12.15"
+  }
+}

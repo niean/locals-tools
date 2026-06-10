@@ -1,0 +1,67 @@
+.c-toast {
+  position: fixed;
+  top: var(--space-xl);
+  left: 50%;
+  transform: translateX(-50%) translateY(-20px);
+  background-color: var(--color-surface-elevated);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-soft);
+  padding: var(--space-sm) var(--space-lg);
+  font-size: var(--font-size-sm);
+  opacity: 0;
+  transition: opacity var(--transition-fast), transform var(--transition-fast);
+  z-index: 1000;
+  pointer-events: none;
+}
+
+.c-toast.is-visible {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+.c-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(11, 22, 34, 0.42);
+}
+
+.c-modal__panel {
+  width: min(420px, calc(100vw - 48px));
+  padding: var(--space-xl);
+  border: 1px solid var(--color-border);
+  border-radius: var(--panel-radius);
+  background-color: var(--color-surface-elevated);
+  box-shadow: var(--shadow-soft);
+}
+
+.c-modal__title {
+  margin-bottom: var(--space-lg);
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+}
+
+.c-modal__progress {
+  height: 8px;
+  border-radius: 999px;
+  background-color: var(--color-primary-soft);
+  overflow: hidden;
+}
+
+.c-modal__progress-bar {
+  width: 0;
+  height: 100%;
+  border-radius: inherit;
+  background-color: var(--color-primary);
+  transition: width var(--transition-fast);
+}
+
+.c-modal__message {
+  margin-top: var(--space-md);
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-sm);
+}

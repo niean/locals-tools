@@ -1,0 +1,97 @@
+.c-property-bar {
+  height: var(--property-bar-height);
+  background-color: var(--color-surface);
+  border-bottom: 1px solid var(--color-border);
+  display: flex;
+  align-items: center;
+  padding: 0 var(--space-lg);
+  gap: var(--space-md);
+  flex-shrink: 0;
+}
+
+.c-property-bar__group {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.c-property-bar__label {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  white-space: nowrap;
+}
+
+.c-property-bar__input {
+  height: 30px;
+}
+
+.c-property-bar__spacer {
+  flex: 1;
+}
+
+.c-property-bar__btn {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--border-radius);
+  transition: background-color var(--transition-fast);
+}
+
+.c-property-bar__btn:hover {
+  background-color: var(--color-surface-hover);
+}
+
+.c-property-bar__btn:disabled {
+  opacity: 0.3;
+}
+
+.c-property-bar__btn:disabled:hover {
+  background-color: transparent;
+}
+
+.c-property-bar__btn svg {
+  width: 16px;
+  height: 16px;
+}
+
+.c-property-bar__select {
+  height: 30px;
+  font: inherit;
+  font-size: var(--font-size-sm);
+  color: var(--color-text);
+  background-color: var(--color-surface-elevated);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  padding: 2px 8px;
+  outline: none;
+}
+
+.c-property-bar__primary {
+  height: 32px;
+  padding: 0 var(--space-lg);
+  border-radius: var(--border-radius);
+  background-color: var(--color-primary);
+  color: #fff;
+  font-size: var(--font-size-sm);
+  transition: background-color var(--transition-fast), opacity var(--transition-fast);
+}
+
+.c-property-bar__primary:hover {
+  background-color: var(--color-primary-hover);
+}
+
+.c-property-bar__primary:disabled {
+  opacity: 0.35;
+}
+
+.c-property-bar__primary:disabled:hover {
+  background-color: var(--color-primary);
+}
+
+.c-property-bar__divider {
+  width: 1px;
+  height: 22px;
+  background-color: var(--color-border);
+}

@@ -27,6 +27,7 @@ secrets.json
 .harness/
 
 # Project
+node_modules/
 __pycache__/
 locals/*
 !locals/.gitkeep
